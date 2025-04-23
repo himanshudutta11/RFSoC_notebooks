@@ -309,7 +309,8 @@ def plot_timeseries(title, x, y, line=['continuous']):
         if line[i] == 'continuous':
             ax.plot(x[i],y[i])
         elif line[i] == 'discrete':
-            ax.stem(x[i], y[i], basefmt='blue', linefmt='red', markerfmt='C3o', use_line_collection=True)
+            #ax.stem(x[i], y[i], basefmt='blue', linefmt='red', markerfmt='C3o', use_line_collection=True)
+            ax.stem(x[i], y[i], basefmt='blue', linefmt='red', markerfmt='C3o')
         elif line[i] == 'dash':
             ax.plot(x[i],y[i],'green',linestyle='--',linewidth = 2.5)
     
